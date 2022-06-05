@@ -119,9 +119,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
-    margin: 100px 100px;
     gap: 20px;
-   
 }
 
 span {
@@ -131,11 +129,19 @@ span {
 
 .container__article {
     display: block;
-    
 }
 
-.container3__para {
+.container__article__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #ef541a;
+}
+
+.footer {
     color: gray;
     text-align: center;
-
 }
