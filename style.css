@@ -11,11 +11,24 @@ body {
     justify-content: space-between;
     padding: 2em;
 }
+
+.container__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ef541a;
+    color: white;
+    font-weight: bold;
+}
+
 .nav__img {
     background-color: orangered;
     font-size: 18px;
     color: white;
 }
+
 
 .nav__button {
     margin-left: 82%;
@@ -25,14 +38,26 @@ body {
     border: none;
     font-size: 15px;
     cursor: pointer;
+    padding: 1.2em;
+    margin-top: 0;
 }
 
 .container1 {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
     gap: 20px;
 
+}
+
+.container1__title--h2 {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.container1__title--h2-2 {
+    margin-top: 40px;
+    font-size: 40px;
 }
 
 .container1__title {
@@ -42,6 +67,8 @@ body {
 .container1__paragraph {
     color: gray;
     line-height: 0.7cm;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .container1__button {
@@ -53,12 +80,12 @@ body {
     font-size: 15px;
     cursor: pointer;
     margin-right: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .container1--span {
     color: gray;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .container1__img {
@@ -71,7 +98,7 @@ body {
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
     gap: 20px;
-    padding-top: 20px;
+    margin-top: 60px;
 
 }
 
@@ -116,19 +143,24 @@ body {
 
 
 .container3 {
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
     gap: 20px;
 }
 
-span {
-    font-weight: bold;
-    bottom: 20px;
+.container3__svg {
+    width: 25px;
 }
+
 
 .container__article {
     display: block;
+}
+
+.container3__p {
+    color: gray;
 }
 
 .container__article__logo {
@@ -139,9 +171,125 @@ span {
     height: 60px;
     border-radius: 10px;
     background-color: #ef541a;
+    margin-bottom: 3em;
 }
 
 .footer {
-    color: gray;
+    margin-top: 120px;
+    padding-bottom: 2em;
+    color: black;
     text-align: center;
+}
+
+
+@media all and (max-width: 768px) {
+    .nav__button {
+        margin-left: 65%;
+    }
+
+    .container1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .container1__img {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+    }
+
+    .container1__title--h2 {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+
+    .container {
+        margin: 0 0 0 50px;
+    }
+
+    .container1__paragraph {
+        padding: 0 2em;
+    }
+
+    .container2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .container2__img--grid {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    
+    .container2__img--grid1 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
+    
+    .container2__img--grid2 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .container1__title--h2-2 {
+        margin-top: 40px;
+        font-size: 40px;
+        
+    }
+
+    .container3 {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+
+@media all and (max-width: 600px) {
+
+    .container {
+        margin: 0 10px;
+    }
+
+    .nav__button {
+        margin-left: 55%;
+       
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+
+    }
+    
+    .container1__img {
+        margin-top: 4em;
+    }
+
+  
+
+    .container3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container__article__logo {
+        align-items: center;
+        margin-left: 200px;
+    }
 }
