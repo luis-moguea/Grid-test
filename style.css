@@ -73,8 +73,13 @@ body {
 
 }
 
-.hero__button {
-    background-color: orangered;
+.hero__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.hero__buttons__button {
+    background-color: #f84604;
     color: white;
     font-weight: bold;
     border-radius: 10px;
@@ -85,9 +90,12 @@ body {
     padding: 20px;
 }
 
-.hero--span {
+.hero__buttons__button:hover {
+    background-color: #bd3104;
+}
+
+.hero__buttons__date {
     color: gray;
-    margin-top: 30px;
 }
 
 .hero__img {
@@ -187,12 +195,12 @@ body {
 }
 
 
-@media all and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
  
     .hero {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /*width: 100%;*/
+        margin-right: 0;
     }
 
     .hero__img {
@@ -200,7 +208,8 @@ body {
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        width: 100%;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
     }
 
     .hero__title--h2 {
