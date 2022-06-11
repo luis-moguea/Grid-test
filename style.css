@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -8,8 +9,9 @@ body {
 }
 
 .nav {
+    display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 2em 0;
 }
 
 .container__logo {
@@ -31,7 +33,7 @@ body {
 
 
 .nav__button {
-    margin-left: 82%;
+   
     font-weight: bold;
     color: black;
     border-radius: 10px;
@@ -183,10 +185,7 @@ body {
 
 
 @media all and (max-width: 768px) {
-    .nav__button {
-        margin-left: 65%;
-    }
-
+ 
     .container1 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -207,11 +206,11 @@ body {
     }
 
     .container {
-        margin: 0 0 0 50px;
+        margin: 0 50px;
     }
 
-    .container1__paragraph {
-        padding: 0 2em;
+    .container2__paragraph {
+        padding: 0;
     }
 
     .container2 {
@@ -260,10 +259,7 @@ body {
         margin: 0 10px;
     }
 
-    .nav__button {
-        margin-left: 55%;
-       
-    }
+
 
     .container1 {
         display: flex;
